@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QSC Cat</title>
+    
+    <style type="text/css">
+#qsc-cat {
+	width: 104px;
+	height: 122px;
+	position: relative;
+	margin: 50px auto;
+}
+.cat-ear_l{
+	border-bottom: 30px solid #43ac43;
+	border-right: 30px solid transparent; 
+	width: 0;
+	height: 0;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+.cat-ear_l:before{
+	display: block;
+	content: '';
+	border-bottom: 20px solid #fff;
+	border-right: 20px solid transparent; 
+	width: 0;
+	height: 0;
+	background: #43ac43;
+	position: absolute;
+	left: 8px;
+	top: 17px;
+}
+.cat-ear_l:after{
+	display: block;
+	content: '';
+	width: 50px;
+	height: 17px;
+	background: #43ac43;
+	position: absolute;
+	left: 27px;
+	top: 17px;
+}
+.cat-ear_r{
+	border-bottom: 30px solid #43ac43;
+	border-left: 30px solid transparent; 
+	width: 0;
+	height: 0;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+.cat-ear_r:before{
+	display: block;
+	content: '';
+	border-bottom: 20px solid #fff;
+	border-left: 20px solid transparent; 
+	width: 0;
+	height: 0;
+	background: #43ac43;
+	position: absolute;
+	right: 8px;
+	top: 17px;
+}
+
+.cat-face{
+	border: 8px solid #43ac43;
+	display: block;
+	position: relative;
+	top: 27px;
+	width: 88px;
+	height: 57px;
+	border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
+}
+.cat-face:after{
+	display: block;
+	content: '';
+	width: 88px;
+	height: 17px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: -9px;
+	z-index: 2;
+}
+.cat-eye-l,
+.cat-eye-r{
+	width: 15px;
+	height: 15px;
+	display: block;
+	border-radius: 50px;
+	background: #43ac43;
+	position: absolute;
+	z-index: 3;
+	top: 8px;
+}
+.cat-eye-l{
+	left: 14px;
+}
+.cat-eye-r{
+	right: 14px;
+}
+.cat-nose{
+	width: 30px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 25px;
+	z-index: 3;
+}
+.cat-nose-h{
+	margin: 0 auto;
+	display: block;
+	width: 17px;
+	height: 6px;
+	background: #43ac43;
+	border-radius: 30px 30px 200px 200px;
+}
+.cat-nose-b{
+	margin: 0 auto;
+	display: block;
+	width: 5px;
+	height: 8px;
+	background: #43ac43;
+}
+.cat-nose-f{
+	width: 24px;
+	height: 20px;
+	display: block;
+    border: 4px solid #43ac43;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+}
+.cat-nose-f:after{
+	display: block;
+	content: '';
+	width: 33px;
+	height: 19px;
+	background: #fff;
+	border-radius: 10px 10px 0px 0px;
+	display: block;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+}
+
+.cat-face_chat{
+	width: 0;
+	height: 0;
+	border-top: 20px solid #43ac43;
+	border-right: 22px solid transparent;
+	position: absolute;
+	bottom: 2px;
+	left: 30px;
+}
+.cat-face_chat:after{
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 16px solid #fff;
+	border-right: 14px solid transparent;
+	position: absolute;
+	top: -32px;
+	left: 7px;
+	z-index: 2;
+}
+    </style>
+</head>
+
+<body>
+    <div id="qsc-cat">
+    	<div class="cat-ear_l"></div>
+    	<div class="cat-ear_r"></div>
+    	<div class="cat-face">
+    		<div class="cat-eye-l"></div>
+    		<div class="cat-eye-r"></div>
+    		<div class="cat-nose">
+    			<div class="cat-nose-h"></div>
+    			<div class="cat-nose-b"></div>
+    			<div class="cat-nose-f"></div>
+    		</div>
+    	</div>
+    	<div class="cat-face_chat"></div>
+    </div>
+</body>
+
+</html>
